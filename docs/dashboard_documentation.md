@@ -264,7 +264,6 @@ Minimum Temperature
 Maximum Temperature
 Average Humidity
 Average Wind Speed
-Rainfall
 ```
 
 ---
@@ -286,10 +285,6 @@ Shows differences in humidity between locations.
 ### Wind
 
 Provides insight into wind-speed patterns.
-
-### Rainfall
-
-Shows rainfall observations where available.
 
 ### Time-of-Day Analysis
 
