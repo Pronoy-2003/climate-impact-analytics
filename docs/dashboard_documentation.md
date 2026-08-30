@@ -123,26 +123,7 @@ Power BI
 
 The main analytical model is based on the Gold dimensional model.
 
-```text
-                  ┌──────────────┐
-                  │   dim_city   │
-                  └──────┬───────┘
-                         │
-                         │ 1 : *
-                         ▼
-                 ┌──────────────────┐
-                 │ fact_environment │
-                 └──────────────────┘
-                         ▲
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-          1 : *                 1 : *
-              │                     │
-       ┌──────┴─────┐        ┌──────┴─────┐
-       │  dim_date  │        │  dim_time  │
-       └────────────┘        └────────────┘
-```
+![Data Model](docs/data_mart.png)
 
 ### Relationships
 
