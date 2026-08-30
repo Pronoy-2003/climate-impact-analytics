@@ -472,3 +472,227 @@ BEGIN
 END;
 GO
 
+
+-- gold.vw_environment_daily --
+IF OBJECT_ID('gold.vw_environment_daily', 'V') IS NOT NULL
+    DROP VIEW gold.vw_environment_daily;
+GO
+
+CREATE VIEW gold.vw_environment_daily
+AS
+
+SELECT
+
+    city_key,
+
+    CAST(
+        observation_timestamp_utc AS DATE
+    ) AS observation_date,
+
+    COUNT(*) AS observation_count,
+
+    AVG(temperature_c) AS avg_temperature_c,
+
+    MIN(temperature_c) AS min_temperature_c,
+
+    MAX(temperature_c) AS max_temperature_c,
+
+    STDEV(temperature_c) AS temperature_stddev_c,
+
+    AVG(feels_like_c) AS avg_feels_like_c,
+
+    AVG(humidity_pct) AS avg_humidity_pct,
+
+    AVG(pressure_hpa) AS avg_pressure_hpa,
+
+    AVG(visibility_m) AS avg_visibility_m,
+
+    AVG(wind_speed_mps) AS avg_wind_speed_mps,
+
+    MAX(wind_speed_mps) AS max_wind_speed_mps,
+
+    AVG(wind_gust_mps) AS avg_wind_gust_mps,
+
+    MAX(rainfall_1h_mm) AS max_rainfall_1h_mm,
+
+    AVG(cloudiness_pct) AS avg_cloudiness_pct,
+
+    AVG(
+        CAST(openweather_aqi AS DECIMAL(10,2))
+    ) AS avg_aqi,
+
+    MAX(
+        CAST(openweather_aqi AS DECIMAL(10,2))
+    ) AS max_aqi,
+
+    AVG(pm2_5) AS avg_pm2_5,
+
+    MAX(pm2_5) AS max_pm2_5,
+
+    AVG(pm10) AS avg_pm10,
+
+    MAX(pm10) AS max_pm10,
+
+    AVG(co) AS avg_co,
+
+    AVG(no) AS avg_no,
+
+    AVG(no2) AS avg_no2,
+
+    AVG(o3) AS avg_o3,
+
+    AVG(so2) AS avg_so2,
+
+    AVG(nh3) AS avg_nh3
+
+FROM gold.fact_environment
+
+GROUP BY
+    city_key,
+    CAST(
+        observation_timestamp_utc AS DATE
+    );
+GO
+
+
+-- gold.vw_environment_hourly --
+IF OBJECT_ID('gold.vw_environment_hourly', 'V') IS NOT NULL
+    DROP VIEW gold.vw_environment_hourly;
+GO
+
+CREATE VIEW gold.vw_environment_hourly
+AS
+
+WITH hourly_ranked AS
+(
+    SELECT
+        environment_key,
+        observation_id,
+        ingestion_id,
+        city_key,
+
+        observation_timestamp_utc,
+
+        temperature_c,
+        feels_like_c,
+        temp_min_c,
+        temp_max_c,
+
+        humidity_pct,
+        pressure_hpa,
+        visibility_m,
+
+        wind_speed_mps,
+        wind_direction_deg,
+        wind_gust_mps,
+
+        rainfall_1h_mm,
+        cloudiness_pct,
+
+        openweather_aqi,
+        pm2_5,
+        pm10,
+
+        co,
+        no,
+        no2,
+        o3,
+        so2,
+        nh3,
+
+        aqi_category,
+
+        weather_quality_flag,
+        air_quality_flag,
+
+        source_system,
+
+        DATEADD(
+            HOUR,
+            DATEDIFF(
+                HOUR,
+                0,
+                observation_timestamp_utc
+            ),
+            0
+        ) AS observation_hour,
+
+        ROW_NUMBER() OVER
+        (
+            PARTITION BY
+                city_key,
+                DATEADD(
+                    HOUR,
+                    DATEDIFF(
+                        HOUR,
+                        0,
+                        observation_timestamp_utc
+                    ),
+                    0
+                )
+
+            ORDER BY observation_timestamp_utc DESC
+        ) AS rn
+
+    FROM gold.fact_environment
+)
+
+SELECT
+    city_key,
+
+    observation_hour,
+
+    COUNT(*) AS observation_count,
+
+    AVG(temperature_c) AS avg_temperature_c,
+    MIN(temperature_c) AS min_temperature_c,
+    MAX(temperature_c) AS max_temperature_c,
+
+    AVG(feels_like_c) AS avg_feels_like_c,
+
+    AVG(humidity_pct) AS avg_humidity_pct,
+
+    AVG(pressure_hpa) AS avg_pressure_hpa,
+
+    AVG(visibility_m) AS avg_visibility_m,
+
+    AVG(wind_speed_mps) AS avg_wind_speed_mps,
+
+    AVG(wind_direction_deg) AS avg_wind_direction_deg,
+
+    AVG(wind_gust_mps) AS avg_wind_gust_mps,
+
+    MAX(
+        CASE
+            WHEN rn = 1
+            THEN rainfall_1h_mm
+        END
+    ) AS rainfall_1h_mm,
+
+    AVG(cloudiness_pct) AS avg_cloudiness_pct,
+
+    AVG(
+        CAST(openweather_aqi AS DECIMAL(10,2))
+    ) AS avg_aqi,
+
+    AVG(pm2_5) AS avg_pm2_5,
+    MAX(pm2_5) AS max_pm2_5,
+
+    AVG(pm10) AS avg_pm10,
+    MAX(pm10) AS max_pm10,
+
+    AVG(co) AS avg_co,
+    AVG(no) AS avg_no,
+    AVG(no2) AS avg_no2,
+    AVG(o3) AS avg_o3,
+    AVG(so2) AS avg_so2,
+    AVG(nh3) AS avg_nh3
+
+FROM hourly_ranked
+
+GROUP BY
+    city_key,
+    observation_hour;
+GO
+
+
