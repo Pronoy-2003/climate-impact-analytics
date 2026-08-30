@@ -275,4 +275,32 @@ GO
 
 
 
+CREATE UNIQUE INDEX UX_weather_batch_city
+ON bronze.weather_raw
+(
+    ingestion_id,
+    city
+);
+GO
 
+CREATE UNIQUE INDEX UX_air_quality_batch_city
+ON bronze.air_quality_raw
+(
+    ingestion_id,
+    city
+);
+GO
+
+
+
+CREATE UNIQUE INDEX UX_weather_observation
+ON bronze.weather_raw(observation_id);
+GO
+
+CREATE UNIQUE INDEX UX_air_quality_observation
+ON bronze.air_quality_raw(observation_id);
+GO
+
+CREATE UNIQUE INDEX UX_ingestion_id
+ON bronze.ingestion_log(ingestion_id);
+GO
