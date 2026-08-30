@@ -26,46 +26,7 @@ observation.
 
 # 2. Gold Layer Data Model
 
-```text
-                         ┌─────────────────┐
-                         │   gold.dim_city │
-                         │                 │
-                         │ PK city_key     │
-                         │ city_name       │
-                         │ country_name    │
-                         │ latitude        │
-                         │ longitude       │
-                         │ region          │
-                         └────────┬────────┘
-                                  │
-                                  │ 1
-                                  │
-                                  │ *
-                    ┌─────────────▼─────────────┐
-                    │   gold.fact_environment   │
-                    │                           │
-                    │ PK environment_key        │
-                    │ FK city_key               │
-                    │ FK date_key               │
-                    │ FK time_key               │
-                    │                           │
-                    │ Weather Metrics           │
-                    │ Air Quality Metrics       │
-                    │ Data Quality              │
-                    │ Metadata                  │
-                    └─────────────▲─────────────┘
-                                  │
-                         ┌────────┴────────┐
-                         │                 │
-                        *│                 │*
-                         │                 │
-                         │                 │
-                    ┌────┴──────┐     ┌───┴────────┐
-                    │dim_date   │     │ dim_time   │
-                    │           │     │            │
-                    │PK date_key│     │PK time_key │
-                    └───────────┘     └────────────┘
-```
+![Data Mart](docs/data_mart.png)
 
 ### Relationships
 
