@@ -66,7 +66,7 @@ The project follows a layered data architecture:
 
 The complete data lifecycle is:
 
-![Data Architecture](docs/data_pipeline.png)
+![Data Pipeline](docs/data_pipeline.png)
 
 ---
 
@@ -213,7 +213,7 @@ gold.dim_time
 
 ### Data model
 
-![Data Architecture](docs/data_mart.png)
+![Data Model](docs/data_mart.png)
 
 The central fact table stores environmental observations, while the dimension tables provide city, date, and time context.
 
