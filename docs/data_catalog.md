@@ -733,21 +733,6 @@ section with:
 
 The Gold layer follows a dimensional model:
 
-![Data Architecture](project_architecture.png)
-
-The design separates:
-
-**Measures and observations**
-
-from
-
-**Descriptive dimensions**
-
-while keeping the Gold layer optimized for analytical querying and
-Power BI reporting.# 15. Gold Layer Design Summary
-
-The Gold layer follows a dimensional model:
-
 ```text
                  ┌──────────────┐
                  │   dim_city   │
