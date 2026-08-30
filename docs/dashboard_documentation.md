@@ -181,6 +181,10 @@ viewing only static results.
 
 # 6. Page 1 — Climate Impact Overview
 
+![Dashboard Page 1](../powerbi/images/01_climate_impact_overview.png)
+
+---
+
 ## Purpose
 
 The first page provides a high-level summary of the environmental
@@ -231,11 +235,13 @@ It provides a quick overview before users move to more detailed pages.
 
 ---
 
-![Dashboard Page 1](../powerbi/images/01_climate_impact_overview.png)
 
----
 
 # 7. Page 2 — Weather & Temperature
+
+![Dashboard Page 2](../powerbi/images/02_weather_&_temperature.png)
+
+---
 
 ## Purpose
 
@@ -311,6 +317,10 @@ Evening
 
 # 8. Page 3 — Air Quality & Pollution
 
+![Dashboard Page 3](../powerbi/images/03_air_quality_&_pollution.png)
+
+---
+
 ## Purpose
 
 This page focuses on air-quality conditions and pollution levels.
@@ -378,6 +388,10 @@ field to classify air-quality conditions.
 
 # 9. Page 4 — City Comparison
 
+![Dashboard Page 4](../powerbi/images/04_city_comparison.png)
+
+---
+
 ## Purpose
 
 This page provides a side-by-side comparison of environmental
@@ -423,6 +437,10 @@ that may require additional environmental monitoring.
 ---
 
 # 10. Page 5 — Environmental Relationships & Patterns
+
+![Dashboard Page 5](../powerbi/images/05_environmental_relationships_&_patterns.png)
+
+---
 
 ## Purpose
 
@@ -535,6 +553,10 @@ Evening
 ---
 
 # 11. Page 6 — Pollution Hotspots & Risk
+
+![Dashboard Page 6](../powerbi/images/06_pollution_hotspots_&_risk.png)
+
+---
 
 ## Purpose
 
