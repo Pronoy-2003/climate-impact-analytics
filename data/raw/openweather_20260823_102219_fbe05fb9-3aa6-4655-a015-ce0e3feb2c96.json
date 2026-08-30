@@ -1,0 +1,1587 @@
+{
+    "metadata": {
+        "ingestion_id": "fbe05fb9-3aa6-4655-a015-ce0e3feb2c96",
+        "source": "OpenWeather",
+        "ingestion_timestamp_utc": "2026-08-23T10:21:42.703166+00:00",
+        "city_count": 20,
+        "weather_api_calls": 20,
+        "air_quality_api_calls": 20,
+        "total_api_calls": 40
+    },
+    "data": [
+        {
+            "city": "Delhi",
+            "country": "India",
+            "latitude": 28.6139,
+            "longitude": 77.209,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 77.209,
+                    "lat": 28.6139
+                },
+                "weather": [
+                    {
+                        "id": 803,
+                        "main": "Clouds",
+                        "description": "broken clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 33.99,
+                    "feels_like": 40.99,
+                    "temp_min": 33.07,
+                    "temp_max": 33.99,
+                    "pressure": 1002,
+                    "humidity": 62,
+                    "sea_level": 1002,
+                    "grnd_level": 975
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 4.12,
+                    "deg": 280
+                },
+                "clouds": {
+                    "all": 81
+                },
+                "dt": 1787480249,
+                "sys": {
+                    "type": 1,
+                    "id": 9161,
+                    "country": "IN",
+                    "sunrise": 1787444678,
+                    "sunset": 1787491415
+                },
+                "timezone": 19800,
+                "id": 1260877,
+                "name": "Parliament House, Delhi",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 77.209,
+                    "lat": 28.6139
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 150.85,
+                            "no": 0.26,
+                            "no2": 1.74,
+                            "o3": 85.11,
+                            "so2": 0.64,
+                            "pm2_5": 21.2,
+                            "pm10": 41.01,
+                            "nh3": 2.44
+                        },
+                        "dt": 1787480384
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Mumbai",
+            "country": "India",
+            "latitude": 19.076,
+            "longitude": 72.8777,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 72.8777,
+                    "lat": 19.076
+                },
+                "weather": [
+                    {
+                        "id": 803,
+                        "main": "Clouds",
+                        "description": "broken clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 31,
+                    "feels_like": 37.6,
+                    "temp_min": 29.95,
+                    "temp_max": 31,
+                    "pressure": 1006,
+                    "humidity": 70,
+                    "sea_level": 1006,
+                    "grnd_level": 1005
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 7.2,
+                    "deg": 280
+                },
+                "clouds": {
+                    "all": 75
+                },
+                "dt": 1787480505,
+                "sys": {
+                    "type": 1,
+                    "id": 9052,
+                    "country": "IN",
+                    "sunrise": 1787446298,
+                    "sunset": 1787491873
+                },
+                "timezone": 19800,
+                "id": 8131499,
+                "name": "Konkan Division",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 72.878,
+                    "lat": 19.076
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 69.26,
+                            "no": 0.01,
+                            "no2": 0.05,
+                            "o3": 31.97,
+                            "so2": 0.21,
+                            "pm2_5": 4.9,
+                            "pm10": 11.25,
+                            "nh3": 0
+                        },
+                        "dt": 1787480219
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Kolkata",
+            "country": "India",
+            "latitude": 22.5726,
+            "longitude": 88.3639,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 88.3639,
+                    "lat": 22.5726
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 30.96,
+                    "feels_like": 37.96,
+                    "temp_min": 30.96,
+                    "temp_max": 30.96,
+                    "pressure": 999,
+                    "humidity": 89,
+                    "sea_level": 999,
+                    "grnd_level": 998
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 2.57,
+                    "deg": 90
+                },
+                "rain": {
+                    "1h": 0.87
+                },
+                "clouds": {
+                    "all": 93
+                },
+                "dt": 1787480153,
+                "sys": {
+                    "type": 1,
+                    "id": 9114,
+                    "country": "IN",
+                    "sunrise": 1787442379,
+                    "sunset": 1787488361
+                },
+                "timezone": 19800,
+                "id": 1275004,
+                "name": "Kolkata",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 88.3639,
+                    "lat": 22.5726
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 3
+                        },
+                        "components": {
+                            "co": 291.36,
+                            "no": 0.28,
+                            "no2": 2.53,
+                            "o3": 100.46,
+                            "so2": 2.86,
+                            "pm2_5": 37.96,
+                            "pm10": 42.92,
+                            "nh3": 7.9
+                        },
+                        "dt": 1787480508
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Bengaluru",
+            "country": "India",
+            "latitude": 12.9716,
+            "longitude": 77.5946,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 77.5946,
+                    "lat": 12.9716
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 27.93,
+                    "feels_like": 30.4,
+                    "temp_min": 26.95,
+                    "temp_max": 28.58,
+                    "pressure": 1009,
+                    "humidity": 69,
+                    "sea_level": 1009,
+                    "grnd_level": 912
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 0.45,
+                    "deg": 225,
+                    "gust": 1.79
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480172,
+                "sys": {
+                    "type": 2,
+                    "id": 2017753,
+                    "country": "IN",
+                    "sunrise": 1787445498,
+                    "sunset": 1787490410
+                },
+                "timezone": 19800,
+                "id": 1277333,
+                "name": "Bengaluru",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 77.595,
+                    "lat": 12.972
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 113.03,
+                            "no": 0.56,
+                            "no2": 2.26,
+                            "o3": 34.31,
+                            "so2": 0.83,
+                            "pm2_5": 2.5,
+                            "pm10": 4.13,
+                            "nh3": 3.23
+                        },
+                        "dt": 1787480074
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Chennai",
+            "country": "India",
+            "latitude": 13.0827,
+            "longitude": 80.2707,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 80.2707,
+                    "lat": 13.0827
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 32.83,
+                    "feels_like": 39.83,
+                    "temp_min": 32.24,
+                    "temp_max": 35.06,
+                    "pressure": 1004,
+                    "humidity": 65,
+                    "sea_level": 1004,
+                    "grnd_level": 1004
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 2.68,
+                    "deg": 143,
+                    "gust": 3.13
+                },
+                "rain": {
+                    "1h": 0.11
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480455,
+                "sys": {
+                    "type": 2,
+                    "id": 2104103,
+                    "country": "IN",
+                    "sunrise": 1787444850,
+                    "sunset": 1787489774
+                },
+                "timezone": 19800,
+                "id": 1465730,
+                "name": "Park Town",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 80.271,
+                    "lat": 13.083
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 129.16,
+                            "no": 0.5,
+                            "no2": 3.07,
+                            "o3": 64.3,
+                            "so2": 7.68,
+                            "pm2_5": 14.58,
+                            "pm10": 16.58,
+                            "nh3": 3.34
+                        },
+                        "dt": 1787480219
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Hyderabad",
+            "country": "India",
+            "latitude": 17.385,
+            "longitude": 78.4867,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 78.4867,
+                    "lat": 17.385
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 25.52,
+                    "feels_like": 26.32,
+                    "temp_min": 25.23,
+                    "temp_max": 27.73,
+                    "pressure": 1008,
+                    "humidity": 84,
+                    "sea_level": 1008,
+                    "grnd_level": 944
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 34.8,
+                    "deg": 0,
+                    "gust": 34.8
+                },
+                "rain": {
+                    "1h": 0.28
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480338,
+                "sys": {
+                    "type": 1,
+                    "id": 9214,
+                    "country": "IN",
+                    "sunrise": 1787445046,
+                    "sunset": 1787490433
+                },
+                "timezone": 19800,
+                "id": 1269843,
+                "name": "Hyderabad",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 78.4917,
+                    "lat": 17.3932
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 90.54,
+                            "no": 0.31,
+                            "no2": 3.11,
+                            "o3": 39.26,
+                            "so2": 4.85,
+                            "pm2_5": 1.84,
+                            "pm10": 2.37,
+                            "nh3": 0.99
+                        },
+                        "dt": 1787480206
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Pune",
+            "country": "India",
+            "latitude": 18.5204,
+            "longitude": 73.8567,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 73.8567,
+                    "lat": 18.5204
+                },
+                "weather": [
+                    {
+                        "id": 803,
+                        "main": "Clouds",
+                        "description": "broken clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 25.44,
+                    "feels_like": 25.61,
+                    "temp_min": 24.63,
+                    "temp_max": 26.39,
+                    "pressure": 1009,
+                    "humidity": 60,
+                    "sea_level": 1009,
+                    "grnd_level": 935
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 7.59,
+                    "deg": 262,
+                    "gust": 9.13
+                },
+                "clouds": {
+                    "all": 58
+                },
+                "dt": 1787480309,
+                "sys": {
+                    "type": 2,
+                    "id": 2107474,
+                    "country": "IN",
+                    "sunrise": 1787446094,
+                    "sunset": 1787491607
+                },
+                "timezone": 19800,
+                "id": 1259229,
+                "name": "Pune",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 73.8553,
+                    "lat": 18.5196
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 69.18,
+                            "no": 0.02,
+                            "no2": 0.25,
+                            "o3": 29.87,
+                            "so2": 0.19,
+                            "pm2_5": 5.26,
+                            "pm10": 8.37,
+                            "nh3": 0.14
+                        },
+                        "dt": 1787480484
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Ahmedabad",
+            "country": "India",
+            "latitude": 23.0225,
+            "longitude": 72.5714,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 72.5714,
+                    "lat": 23.0225
+                },
+                "weather": [
+                    {
+                        "id": 803,
+                        "main": "Clouds",
+                        "description": "broken clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 29.02,
+                    "feels_like": 31.22,
+                    "temp_min": 29.02,
+                    "temp_max": 29.02,
+                    "pressure": 1004,
+                    "humidity": 61,
+                    "sea_level": 1004,
+                    "grnd_level": 998
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 3.09,
+                    "deg": 240
+                },
+                "clouds": {
+                    "all": 52
+                },
+                "dt": 1787480015,
+                "sys": {
+                    "type": 1,
+                    "id": 9049,
+                    "country": "IN",
+                    "sunrise": 1787446143,
+                    "sunset": 1787492175
+                },
+                "timezone": 19800,
+                "id": 1279233,
+                "name": "Ahmedabad",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 72.5714,
+                    "lat": 23.0225
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 86.62,
+                            "no": 0.1,
+                            "no2": 1,
+                            "o3": 43.84,
+                            "so2": 0.96,
+                            "pm2_5": 6.29,
+                            "pm10": 11.37,
+                            "nh3": 0.16
+                        },
+                        "dt": 1787480517
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Jaipur",
+            "country": "India",
+            "latitude": 26.9124,
+            "longitude": 75.7873,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 75.7858,
+                    "lat": 26.9136
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 33.68,
+                    "feels_like": 37.38,
+                    "temp_min": 33.68,
+                    "temp_max": 33.68,
+                    "pressure": 1004,
+                    "humidity": 49,
+                    "sea_level": 1004,
+                    "grnd_level": 955
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 3.6,
+                    "deg": 260
+                },
+                "rain": {
+                    "1h": 0.12
+                },
+                "clouds": {
+                    "all": 51
+                },
+                "dt": 1787480417,
+                "sys": {
+                    "type": 1,
+                    "id": 9170,
+                    "country": "IN",
+                    "sunrise": 1787445130,
+                    "sunset": 1787491645
+                },
+                "timezone": 19800,
+                "id": 8199371,
+                "name": "Rambagh",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 75.7873,
+                    "lat": 26.9124
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 109.86,
+                            "no": 0.2,
+                            "no2": 0.94,
+                            "o3": 65.53,
+                            "so2": 0.31,
+                            "pm2_5": 10.66,
+                            "pm10": 20.36,
+                            "nh3": 1.68
+                        },
+                        "dt": 1787480519
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Guwahati",
+            "country": "India",
+            "latitude": 26.1445,
+            "longitude": 91.7362,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 91.7362,
+                    "lat": 26.1445
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 32,
+                    "feels_like": 39,
+                    "temp_min": 32,
+                    "temp_max": 32,
+                    "pressure": 1001,
+                    "humidity": 79,
+                    "sea_level": 1001,
+                    "grnd_level": 983
+                },
+                "visibility": 8115,
+                "wind": {
+                    "speed": 2.57,
+                    "deg": 290
+                },
+                "rain": {
+                    "1h": 0.56
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480305,
+                "sys": {
+                    "type": 1,
+                    "id": 9117,
+                    "country": "IN",
+                    "sunrise": 1787441350,
+                    "sunset": 1787487771
+                },
+                "timezone": 19800,
+                "id": 1271476,
+                "name": "Guwahati",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 91.7362,
+                    "lat": 26.1445
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 154.02,
+                            "no": 0.17,
+                            "no2": 1.78,
+                            "o3": 56.77,
+                            "so2": 0.53,
+                            "pm2_5": 4.22,
+                            "pm10": 4.67,
+                            "nh3": 0.95
+                        },
+                        "dt": 1787480521
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Lucknow",
+            "country": "India",
+            "latitude": 26.8467,
+            "longitude": 80.9462,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 80.9462,
+                    "lat": 26.8467
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 33.05,
+                    "feels_like": 40.05,
+                    "temp_min": 33.05,
+                    "temp_max": 33.05,
+                    "pressure": 1001,
+                    "humidity": 75,
+                    "sea_level": 1001,
+                    "grnd_level": 986
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 2.06,
+                    "deg": 250
+                },
+                "rain": {
+                    "1h": 0.29
+                },
+                "clouds": {
+                    "all": 77
+                },
+                "dt": 1787480522,
+                "sys": {
+                    "type": 1,
+                    "id": 9176,
+                    "country": "IN",
+                    "sunrise": 1787443896,
+                    "sunset": 1787490403
+                },
+                "timezone": 19800,
+                "id": 1264733,
+                "name": "Lucknow",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 80.946,
+                    "lat": 26.847
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 255.68,
+                            "no": 0.06,
+                            "no2": 3.06,
+                            "o3": 74.05,
+                            "so2": 1.02,
+                            "pm2_5": 11.98,
+                            "pm10": 13.23,
+                            "nh3": 1.78
+                        },
+                        "dt": 1787480219
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Patna",
+            "country": "India",
+            "latitude": 25.5941,
+            "longitude": 85.1376,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 85.1352,
+                    "lat": 25.5943
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 31.98,
+                    "feels_like": 38.98,
+                    "temp_min": 31.98,
+                    "temp_max": 31.98,
+                    "pressure": 1000,
+                    "humidity": 74,
+                    "sea_level": 1000,
+                    "grnd_level": 993
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 3.6,
+                    "deg": 70
+                },
+                "clouds": {
+                    "all": 95
+                },
+                "dt": 1787480091,
+                "sys": {
+                    "type": 1,
+                    "id": 9129,
+                    "country": "IN",
+                    "sunrise": 1787442969,
+                    "sunset": 1787489319
+                },
+                "timezone": 19800,
+                "id": 1260086,
+                "name": "Patna",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 85.1356,
+                    "lat": 25.5941
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 430.33,
+                            "no": 0.13,
+                            "no2": 4.1,
+                            "o3": 58.59,
+                            "so2": 2.05,
+                            "pm2_5": 24.8,
+                            "pm10": 26.46,
+                            "nh3": 1.3
+                        },
+                        "dt": 1787480045
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Bhopal",
+            "country": "India",
+            "latitude": 23.2599,
+            "longitude": 77.4126,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 77.4126,
+                    "lat": 23.2599
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 29.18,
+                    "feels_like": 33.93,
+                    "temp_min": 29.18,
+                    "temp_max": 29.18,
+                    "pressure": 1006,
+                    "humidity": 74,
+                    "sea_level": 1006,
+                    "grnd_level": 948
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 3.09,
+                    "deg": 250
+                },
+                "rain": {
+                    "1h": 0.14
+                },
+                "clouds": {
+                    "all": 68
+                },
+                "dt": 1787480525,
+                "sys": {
+                    "type": 1,
+                    "id": 9063,
+                    "country": "IN",
+                    "sunrise": 1787444966,
+                    "sunset": 1787491029
+                },
+                "timezone": 19800,
+                "id": 1275841,
+                "name": "Bhopal",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 77.4126,
+                    "lat": 23.2599
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 135.63,
+                            "no": 0.06,
+                            "no2": 2.11,
+                            "o3": 46.42,
+                            "so2": 0.83,
+                            "pm2_5": 14.17,
+                            "pm10": 15.73,
+                            "nh3": 0.92
+                        },
+                        "dt": 1787480526
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Bhubaneswar",
+            "country": "India",
+            "latitude": 20.2961,
+            "longitude": 85.8245,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 85.8165,
+                    "lat": 20.2989
+                },
+                "weather": [
+                    {
+                        "id": 500,
+                        "main": "Rain",
+                        "description": "light rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 29.95,
+                    "feels_like": 36.95,
+                    "temp_min": 28.71,
+                    "temp_max": 29.95,
+                    "pressure": 999,
+                    "humidity": 79,
+                    "sea_level": 999,
+                    "grnd_level": 996
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 2.57,
+                    "deg": 290
+                },
+                "rain": {
+                    "1h": 0.31
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480175,
+                "sys": {
+                    "type": 1,
+                    "id": 9113,
+                    "country": "IN",
+                    "sunrise": 1787443123,
+                    "sunset": 1787488839
+                },
+                "timezone": 19800,
+                "id": 1275817,
+                "name": "Bhubaneswar",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 85.8245,
+                    "lat": 20.2961
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 3
+                        },
+                        "components": {
+                            "co": 207.67,
+                            "no": 0.17,
+                            "no2": 2.52,
+                            "o3": 83.42,
+                            "so2": 1.86,
+                            "pm2_5": 31.77,
+                            "pm10": 32.96,
+                            "nh3": 0.5
+                        },
+                        "dt": 1787480528
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Kochi",
+            "country": "India",
+            "latitude": 9.9312,
+            "longitude": 76.2673,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 76.2673,
+                    "lat": 9.9312
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 29.99,
+                    "feels_like": 36.99,
+                    "temp_min": 29.99,
+                    "temp_max": 29.99,
+                    "pressure": 1010,
+                    "humidity": 89,
+                    "sea_level": 1010,
+                    "grnd_level": 1010
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 5.18,
+                    "deg": 295,
+                    "gust": 7.34
+                },
+                "clouds": {
+                    "all": 94
+                },
+                "dt": 1787480529,
+                "sys": {
+                    "type": 1,
+                    "id": 9211,
+                    "country": "IN",
+                    "sunrise": 1787445974,
+                    "sunset": 1787490571
+                },
+                "timezone": 19800,
+                "id": 1273874,
+                "name": "Kochi",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 76.2673,
+                    "lat": 9.9312
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 66.75,
+                            "no": 0.04,
+                            "no2": 0.4,
+                            "o3": 33.47,
+                            "so2": 0.43,
+                            "pm2_5": 1.79,
+                            "pm10": 3.93,
+                            "nh3": 0
+                        },
+                        "dt": 1787480530
+                    }
+                ]
+            }
+        },
+        {
+            "city": "London",
+            "country": "United Kingdom",
+            "latitude": 51.5074,
+            "longitude": -0.1278,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": -0.1278,
+                    "lat": 51.5074
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 21.77,
+                    "feels_like": 21.31,
+                    "temp_min": 19.88,
+                    "temp_max": 22.81,
+                    "pressure": 1025,
+                    "humidity": 50,
+                    "sea_level": 1025,
+                    "grnd_level": 1021
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 2.24,
+                    "deg": 107,
+                    "gust": 2.68
+                },
+                "clouds": {
+                    "all": 95
+                },
+                "dt": 1787480159,
+                "sys": {
+                    "type": 2,
+                    "id": 2075535,
+                    "country": "GB",
+                    "sunrise": 1787461117,
+                    "sunset": 1787512091
+                },
+                "timezone": 3600,
+                "id": 2643743,
+                "name": "London",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": -0.1278,
+                    "lat": 51.5074
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 185.1,
+                            "no": 0.41,
+                            "no2": 2.2,
+                            "o3": 94.32,
+                            "so2": 1.92,
+                            "pm2_5": 1.55,
+                            "pm10": 3.26,
+                            "nh3": 0.79
+                        },
+                        "dt": 1787480437
+                    }
+                ]
+            }
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": -74.006,
+                    "lat": 40.7128
+                },
+                "weather": [
+                    {
+                        "id": 502,
+                        "main": "Rain",
+                        "description": "heavy intensity rain",
+                        "icon": "10d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 21.31,
+                    "feels_like": 21.9,
+                    "temp_min": 19.97,
+                    "temp_max": 22.23,
+                    "pressure": 1009,
+                    "humidity": 92,
+                    "sea_level": 1009,
+                    "grnd_level": 1009
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 4.92,
+                    "deg": 299,
+                    "gust": 5.81
+                },
+                "rain": {
+                    "1h": 6.48
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480395,
+                "sys": {
+                    "type": 2,
+                    "id": 2111743,
+                    "country": "US",
+                    "sunrise": 1787480061,
+                    "sunset": 1787528602
+                },
+                "timezone": -14400,
+                "id": 5128581,
+                "name": "New York",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": -74.006,
+                    "lat": 40.7128
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 1
+                        },
+                        "components": {
+                            "co": 136.74,
+                            "no": 0,
+                            "no2": 2.06,
+                            "o3": 36.17,
+                            "so2": 0.39,
+                            "pm2_5": 3.7,
+                            "pm10": 4.32,
+                            "nh3": 0.08
+                        },
+                        "dt": 1787480534
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Tokyo",
+            "country": "Japan",
+            "latitude": 35.6762,
+            "longitude": 139.6503,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 139.6503,
+                    "lat": 35.6762
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04n"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 28.2,
+                    "feels_like": 32.44,
+                    "temp_min": 27.12,
+                    "temp_max": 28.81,
+                    "pressure": 1016,
+                    "humidity": 79,
+                    "sea_level": 1016,
+                    "grnd_level": 1012
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 3.09,
+                    "deg": 130
+                },
+                "clouds": {
+                    "all": 100
+                },
+                "dt": 1787480395,
+                "sys": {
+                    "type": 2,
+                    "id": 20777,
+                    "country": "JP",
+                    "sunrise": 1787429175,
+                    "sunset": 1787476951
+                },
+                "timezone": 32400,
+                "id": 1862143,
+                "name": "Horinouchi",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 139.6503,
+                    "lat": 35.6762
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 3
+                        },
+                        "components": {
+                            "co": 165.51,
+                            "no": 0,
+                            "no2": 23.23,
+                            "o3": 81.23,
+                            "so2": 11.99,
+                            "pm2_5": 28.37,
+                            "pm10": 29.7,
+                            "nh3": 0
+                        },
+                        "dt": 1787480536
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Singapore",
+            "country": "Singapore",
+            "latitude": 1.3521,
+            "longitude": 103.8198,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 103.8198,
+                    "lat": 1.3521
+                },
+                "weather": [
+                    {
+                        "id": 804,
+                        "main": "Clouds",
+                        "description": "overcast clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 31.71,
+                    "feels_like": 34.55,
+                    "temp_min": 30.67,
+                    "temp_max": 31.72,
+                    "pressure": 1010,
+                    "humidity": 53,
+                    "sea_level": 1010,
+                    "grnd_level": 1009
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 5.14,
+                    "deg": 190
+                },
+                "clouds": {
+                    "all": 91
+                },
+                "dt": 1787480537,
+                "sys": {
+                    "type": 1,
+                    "id": 9479,
+                    "country": "SG",
+                    "sunrise": 1787439791,
+                    "sunset": 1787483531
+                },
+                "timezone": 28800,
+                "id": 1880755,
+                "name": "Bright Hill Crescent",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 103.8198,
+                    "lat": 1.3521
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 2
+                        },
+                        "components": {
+                            "co": 76.02,
+                            "no": 0.01,
+                            "no2": 0.2,
+                            "o3": 64.56,
+                            "so2": 0.39,
+                            "pm2_5": 6.15,
+                            "pm10": 11.96,
+                            "nh3": 0.52
+                        },
+                        "dt": 1787480538
+                    }
+                ]
+            }
+        },
+        {
+            "city": "Dubai",
+            "country": "United Arab Emirates",
+            "latitude": 25.2048,
+            "longitude": 55.2708,
+            "weather_status": "SUCCESS",
+            "air_quality_status": "SUCCESS",
+            "weather": {
+                "coord": {
+                    "lon": 55.2747,
+                    "lat": 25.1971
+                },
+                "weather": [
+                    {
+                        "id": 803,
+                        "main": "Clouds",
+                        "description": "broken clouds",
+                        "icon": "04d"
+                    }
+                ],
+                "base": "stations",
+                "main": {
+                    "temp": 43.01,
+                    "feels_like": 43.92,
+                    "temp_min": 43.01,
+                    "temp_max": 43.19,
+                    "pressure": 1001,
+                    "humidity": 20,
+                    "sea_level": 1001,
+                    "grnd_level": 1000
+                },
+                "visibility": 10000,
+                "wind": {
+                    "speed": 6.17,
+                    "deg": 310
+                },
+                "clouds": {
+                    "all": 51
+                },
+                "dt": 1787480263,
+                "sys": {
+                    "type": 1,
+                    "id": 7537,
+                    "country": "AE",
+                    "sunrise": 1787450163,
+                    "sunset": 1787496456
+                },
+                "timezone": 14400,
+                "id": 290845,
+                "name": "Ash Shindaghah",
+                "cod": 200
+            },
+            "air_quality": {
+                "coord": {
+                    "lon": 55.2708,
+                    "lat": 25.2048
+                },
+                "list": [
+                    {
+                        "main": {
+                            "aqi": 5
+                        },
+                        "components": {
+                            "co": 165.13,
+                            "no": 0.36,
+                            "no2": 5.66,
+                            "o3": 178.86,
+                            "so2": 4.11,
+                            "pm2_5": 74.33,
+                            "pm10": 282.69,
+                            "nh3": 0.39
+                        },
+                        "dt": 1787480089
+                    }
+                ]
+            }
+        }
+    ]
+}
