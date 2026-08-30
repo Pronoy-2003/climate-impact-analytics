@@ -231,6 +231,10 @@ It provides a quick overview before users move to more detailed pages.
 
 ---
 
+![Dashboard Page 1](../powerbi/images/01_climate_impact_overview.png)
+
+---
+
 # 7. Page 2 — Weather & Temperature
 
 ## Purpose
