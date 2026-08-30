@@ -629,34 +629,7 @@ fact_environment.time_key
 
 The Gold layer can be represented as:
 
-```text
-                    ┌─────────────────┐
-                    │   dim_city      │
-                    │                 │
-                    │   city_key PK   │
-                    └────────┬────────┘
-                             │
-                             │
-                             ▼
-┌─────────────────┐    ┌─────────────────────────┐    ┌─────────────────┐
-│   dim_date      │    │   fact_environment      │    │   dim_time      │
-│                 │    │                         │    │                 │
-│ date_key PK     │───►│ environment_key PK      │◄───│ time_key PK     │
-│ full_date       │    │ observation_id          │    │ full_time       │
-│ year_number     │    │ city_key FK             │    │ hour_number     │
-│ month_number    │    │ date_key FK             │    │ minute_number   │
-│ day_name        │    │ time_key FK             │    │ time_period     │
-│ is_weekend      │    │ temperature_c           │    └─────────────────┘
-└─────────────────┘    │ humidity_pct            │
-                       │ pressure_hpa            │
-                       │ wind_speed_mps          │
-                       │ rainfall_1h_mm          │
-                       │ openweather_aqi         │
-                       │ pm2_5                   │
-                       │ pm10                    │
-                       │ ...                     │
-                       └─────────────────────────┘
-```
+![Data Model](data_mart.png)
 
 The fact table contains the environmental measurements while the
 dimension tables provide contextual information.
