@@ -123,7 +123,7 @@ Power BI
 
 The main analytical model is based on the Gold dimensional model.
 
-![Data Model](docs/data_mart.png)
+![Data Model](data_mart.png)
 
 ### Relationships
 
