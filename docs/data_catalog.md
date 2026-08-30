@@ -26,7 +26,7 @@ observation.
 
 # 2. Gold Layer Data Model
 
-![Data Mart](docs/data_mart.png)
+![Data Mart](data_mart.png)
 
 ### Relationships
 
