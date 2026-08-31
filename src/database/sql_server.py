@@ -1,3 +1,15 @@
+"""
+SQL Server Database Connection
+
+This module manages the SQL Server database connection used by the
+data pipeline.
+
+It loads database configuration from environment variables, validates
+the required settings, and provides a function to create a SQL Server
+connection using pyodbc.
+"""
+
+
 import os
 
 import pyodbc
