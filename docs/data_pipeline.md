@@ -139,11 +139,8 @@ Business Insights
 
 ## Architecture
 
-For the detailed visual representation of the complete pipeline:
 
-[View Data Pipeline Architecture](../images/data_pipeline_architecture.png)
-
-![Data Pipeline Architecture](../images/data_pipeline_architecture.png)
+![Data Pipeline Architecture](data_pipeline_architecture.png)
 
 ## Summary
 
