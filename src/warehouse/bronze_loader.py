@@ -1,3 +1,15 @@
+"""
+Bronze Layer Data Loader
+
+This script loads raw OpenWeather JSON data into the SQL Server Bronze
+layer.
+
+It extracts weather and air-quality records from each JSON batch,
+loads them into the Bronze tables, records ingestion details, and
+prevents duplicate observations from being inserted.
+"""
+
+
 import json
 import sys
 from pathlib import Path
