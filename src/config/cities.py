@@ -1,3 +1,14 @@
+"""
+Monitored Cities Configuration
+
+This module stores the list of cities monitored by the data pipeline,
+along with their country and geographic coordinates.
+
+The latitude and longitude values are used by the OpenWeather API
+to retrieve weather and air-quality data for each city.
+"""
+
+
 CITIES = {
     "Delhi": {
         "country": "India",
