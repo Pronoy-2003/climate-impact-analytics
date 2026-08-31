@@ -332,7 +332,6 @@ Focuses on weather conditions:
 - Temperature trends
 - Temperature by city
 - Humidity by city
-- Rainfall observations
 - Temperature by time of day
 
   ![Weather & Temperature](powerbi/images/02_weather_&_temperature.png)
@@ -350,7 +349,7 @@ Focuses on air-quality conditions:
 - PM2.5 trend
 - PM2.5 by city
 - AQI category distribution
-- PM2.5 vs wind speed
+- PM2.5 vs Temperature
 
   ![Air Quality & Pollution](powerbi/images/03_air_quality_&_pollution.png)
 
@@ -375,7 +374,7 @@ Provides comparative analysis across monitored cities:
 Focuses on relationships between environmental variables:
 
 - PM2.5 vs wind speed
-- Temperature vs humidity
+- Temperature vs PM2.5
 - PM2.5 by time of day
 - AQI by time of day
 - Environmental correlation summary
