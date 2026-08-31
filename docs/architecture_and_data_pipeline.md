@@ -6,9 +6,9 @@ The Climate Impact Analysis project is an end-to-end analytics pipeline that col
 
 ## Architecture
 
-![System Architecture](../images/project_architecture.png)
+![Data Architecture](project_architecture.png)
 
-[**View System Architecture**](../images/project_architecture.png)
+
 
 ## End-to-End Data Flow
 
@@ -126,12 +126,7 @@ Provides structured, business-ready data for analysis and reporting.
 
 The main Gold model contains:
 
-```text
-                 dim_city
-                    │
-                    ▼
-dim_date ─────► fact_environment ◄───── dim_time
-```
+![Data Model](data_mart.png)
 
 ### Gold Tables
 
@@ -229,19 +224,7 @@ The project does not use a separate enterprise orchestration platform.
 The pipeline workflow is coordinated through the Python ingestion,
 validation, loading, and warehouse transformation modules.
 
-```text
-Configuration
-      ↓
-API Collection
-      ↓
-Validation
-      ↓
-Bronze Loading
-      ↓
-Warehouse Transformation
-      ↓
-Gold
-```
+![Data Pipelining](data_pipeline.png)
 
 ## 9. Key Architecture Principles
 
