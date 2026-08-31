@@ -450,47 +450,104 @@ Ranking cities using multiple pollution indicators provides a more comprehensive
 climate-impact-analytics/
 │
 ├── README.md
+├── requirements.txt
+├── .gitignore
+├── .env.example
+├── LICENSE
 │
 ├── docs/
-│   ├── architecture.md
-│   ├── data_pipeline.md
+│   ├── architecture_and_data_pipeline.md
 │   ├── data_catalog.md
 │   ├── naming_conventions.md
-│   └── dashboard_documentation.md
+│   ├── dashboard_documentation.md
+│   ├── business_insights.md
+│   │
+│   ├── project_architecture.png
+│   ├── data_pipeline_architecture.png
+│   └── data_mart.png
 │
-├── src/
-│   ├── api/
-│   │   └── openweather.py
+├── data/
 │   │
-│   ├── config/
-│   │   └── cities.py
+│   ├── raw/
+│   │   └── openweather/
+│   │       └── .gitkeep
 │   │
-│   ├── database/
-│   │   └── sql_server.py
+│   ├── processed/
+│   │   ├── city_pollution_profile.csv
+│   │   ├── environmental_relationships.csv
+│   │   ├── pollution_hotspots.csv
+│   │   └── pollution_segments.csv
 │   │
-│   ├── ingestion/
-│   │   └── collect_openweather.py
-│   │
-│   ├── validation/
-│   │   └── daily_validation.py
-│   │
-│   └── warehouse/
-│       ├── bronze_loader.py
-│       └── warehouse_transform.py
+│   └── reports/
+│       └── data_quality/
+│           └── .gitkeep
+│
+├── logs/
+│   └── .gitkeep
 │
 ├── notebooks/
 │   ├── 01_data_validation.ipynb
 │   ├── 02_exploratory_analysis.ipynb
 │   └── 03_advanced_analysis.ipynb
 │
+├── powerbi/
+│   ├── Climate_Impact_Dashboard.pbix
+│   │
+│   └── images/
+│       ├── 01_climate_impact_overview.png
+│       ├── 02_weather_and_temperature.png
+│       ├── 03_air_quality_and_pollution.png
+│       ├── 04_city_comparison.png
+│       ├── 05_environmental_relationships_and_patterns.png
+│       └── 06_pollution_hotspots_and_risk.png
+│
 ├── sql/
+│   │
+│   ├── init_database.sql
+│   │
 │   ├── bronze/
+│   │   └── ddl_bronze.sql
+│   │
 │   ├── silver/
-│   └── gold/
+│   │   ├── ddl_silver.sql
+│   │   └── procedure_load_silver.sql
+│   │
+│   ├── gold/
+│   │   ├── ddl_gold.sql
+│   │   └── procedure_load_gold.sql
+│   │
+│   └── tests/
+│       └── test_silver_gold.sql
 │
-├── data/
-│
-└── reports/
+└── src/
+    │
+    ├── __init__.py
+    │
+    ├── api/
+    │   ├── __init__.py
+    │   └── openweather.py
+    │
+    ├── config/
+    │   ├── __init__.py
+    │   └── cities.py
+    │
+    ├── database/
+    │   ├── __init__.py
+    │   ├── sql_server.py
+    │   └── test_connection.py
+    │
+    ├── ingestion/
+    │   ├── __init__.py
+    │   └── collect_openweather.py
+    │
+    ├── validation/
+    │   ├── __init__.py
+    │   └── daily_validation.py
+    │
+    └── warehouse/
+        ├── __init__.py
+        ├── bronze_loader.py
+        └── warehouse_transform.py
 ```
 
 ---
