@@ -1,3 +1,14 @@
+"""
+SQL Server Connection Test
+
+This script verifies that the application can successfully connect
+to the configured SQL Server database.
+
+It establishes a connection, retrieves the current database name,
+prints the connection status, and then closes the database resources.
+"""
+
+
 from src.database.sql_server import get_sql_connection
 
 
