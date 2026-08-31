@@ -317,6 +317,8 @@ Provides a high-level view of:
 - Temperature trends
 - City-level environmental performance
 
+  ![Climate Impact Overview](powerbi/images/01_climate_impact_overview.png)
+
 ---
 
 ## Page 2 — Weather & Temperature
@@ -333,6 +335,8 @@ Focuses on weather conditions:
 - Rainfall observations
 - Temperature by time of day
 
+  ![Weather & Temperature](powerbi/images/02_weather_&_temperature.png)
+
 ---
 
 ## Page 3 — Air Quality & Pollution
@@ -348,6 +352,8 @@ Focuses on air-quality conditions:
 - AQI category distribution
 - PM2.5 vs wind speed
 
+  ![Air Quality & Pollution](powerbi/images/03_air_quality_&_pollution.png)
+
 ---
 
 ## Page 4 — City Comparison
@@ -360,6 +366,8 @@ Provides comparative analysis across monitored cities:
 - Temperature trends
 - Environmental performance table
 
+  ![City Comparison](powerbi/images/04_city_comparison.png)
+
 ---
 
 ## Page 5 — Environmental Relationships & Patterns
@@ -371,6 +379,8 @@ Focuses on relationships between environmental variables:
 - PM2.5 by time of day
 - AQI by time of day
 - Environmental correlation summary
+
+  ![Environmental Relationships & Patterns](powerbi/images/05_environmental_relationships_&_patterns.png)
 
 ---
 
@@ -385,6 +395,8 @@ Focuses on identifying cities with the highest pollution burden:
 - Maximum PM2.5 by city
 - Average PM2.5 by city
 - Pollution hotspot details
+
+  ![Pollution Hotspots & Risk](powerbi/images/06_pollution_hotspots_&_risk.png)
 
 ---
 
