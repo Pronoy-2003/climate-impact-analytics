@@ -1,3 +1,15 @@
+"""
+OpenWeather Data Ingestion Pipeline
+
+This script collects weather and air-quality data for the monitored cities,
+saves each collection cycle as raw JSON, loads the data into the SQL Server
+Bronze layer, and triggers the Silver → Gold warehouse transformations.
+
+The pipeline runs automatically every 5 minutes for a maximum of 10 hours
+and performs daily data validation after the collection session.
+"""
+
+
 import os
 import json
 import time
