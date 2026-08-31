@@ -1,3 +1,15 @@
+"""
+Warehouse Transformation
+
+This script runs the SQL Server warehouse transformations that move
+data through the Bronze → Silver → Gold layers.
+
+It loads and cleans weather and air-quality data into Silver, builds
+the Gold environmental fact table, and commits the complete
+transformation as a database transaction.
+"""
+
+
 from src.database.sql_server import get_sql_connection
 
 
