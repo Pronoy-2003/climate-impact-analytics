@@ -305,7 +305,6 @@ Evening
 - Which cities have the lowest temperatures?
 - How does temperature change over time?
 - How does humidity vary between cities?
-- How does wind speed vary?
 - Are there noticeable differences between time periods?
 
 ---
