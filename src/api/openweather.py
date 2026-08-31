@@ -1,3 +1,17 @@
+"""
+OpenWeather API Client
+
+This module provides functions to collect weather and air-quality data
+from the OpenWeather API using a city's latitude and longitude.
+
+Functions:
+    get_weather()       - Fetches current weather data.
+    get_air_quality()   - Fetches current air-quality data.
+
+The API key is loaded securely from the environment variables.
+"""
+
+
 import os
 import requests
 from dotenv import load_dotenv
