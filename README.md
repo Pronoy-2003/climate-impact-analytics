@@ -556,11 +556,11 @@ climate-impact-analytics/
 
 | Document | Description |
 |---|---|
-| [`architecture.md`](docs/architecture.md) | End-to-end system architecture |
-| [`data_pipeline.md`](docs/data_pipeline.md) | Complete data lifecycle and pipeline |
-| [`data_catalog.md`](docs/data_catalog.md) | Gold-layer tables, columns and relationships |
+| [`architecture_and_data_pipeline.md`](docs/architecture_and_data_pipeline.md) | System architecture and end-to-end data pipeline |
+| [`data_catalog.md`](docs/data_catalog.md) | Gold-layer tables, columns and data structure |
 | [`naming_conventions.md`](docs/naming_conventions.md) | Project-wide naming standards |
-| [`dashboard_documentation.md`](docs/dashboard_documentation.md) | Power BI dashboard documentation |
+| [`dashboard_documentation.md`](docs/dashboard_documentation.md) | Power BI dashboard pages, metrics and visuals |
+| [`business_insights.md`](docs/business_insights.md) | Key findings, business problems and recommended actions |
 
 ---
 
