@@ -66,7 +66,7 @@ The project follows a layered data architecture:
 
 The complete data lifecycle is:
 
-![Data Pipeline](docs/data_pipeline.png)
+![Data Pipeline](docs/data_pipeline_architecture.png)
 
 ---
 
