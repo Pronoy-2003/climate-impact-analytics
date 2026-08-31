@@ -1,3 +1,15 @@
+"""
+Daily Data Validation
+
+This script validates the daily OpenWeather data collection by checking
+batch structure, expected city coverage, duplicate ingestion IDs, time
+gaps, and weather/air-quality API success rates.
+
+It generates an overall data-quality status and saves the validation
+results as a JSON report for monitoring and troubleshooting.
+"""
+
+
 import os
 import json
 import glob
