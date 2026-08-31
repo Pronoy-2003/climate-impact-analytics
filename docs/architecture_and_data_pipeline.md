@@ -224,7 +224,7 @@ The project does not use a separate enterprise orchestration platform.
 The pipeline workflow is coordinated through the Python ingestion,
 validation, loading, and warehouse transformation modules.
 
-![Data Pipelining](data_pipeline.png)
+![Data Pipelining](data_pipeline_architecture.png)
 
 ## 9. Key Architecture Principles
 
