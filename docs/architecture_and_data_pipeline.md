@@ -78,6 +78,10 @@ src/
 | `bronze_loader.py` | Loads data into Bronze |
 | `warehouse_transform.py` | Processes warehouse layers |
 
+
+![Run Pipeline](run_pipeline.png)
+
+
 ## 3. Data Collection & Runtime
 
 The collection process is coordinated by `collect_openweather.py`.
