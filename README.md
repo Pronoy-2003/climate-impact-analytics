@@ -164,6 +164,9 @@ src/
 | `bronze_loader.py` | Loads raw data into Bronze layer |
 | `warehouse_transform.py` | Performs warehouse transformations |
 
+
+![Run Pipeline](docs/run_pipeline.png)
+
 ---
 
 # 🗄️ Data Warehouse
